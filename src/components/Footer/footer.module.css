@@ -16,7 +16,7 @@
     margin: 0;
 }
 
-.container>h2>span{
+.container>h2>span {
     color: lightgray;
 }
 
@@ -44,10 +44,11 @@
 
 .socialIcon {
     color: dimgray;
-        color: lightgray;
-        font-size: 2rem !important;
+    color: lightgray;
+    font-size: 2rem !important;
     border: 3px solid lightgray;
     border-radius: 10px;
+    padding: 5px;
 }
 
 .socialIcon:hover,

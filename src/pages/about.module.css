@@ -83,9 +83,15 @@ p {
     margin: 0;
 }
 
+.plm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
 @media(min-width: 600px) {
     .container {
-        align-items: flex-start;
         gap: 1em;
         max-width: 1200px;
     }
@@ -95,7 +101,28 @@ p {
     }
 
 
-    .detailsConntainer {}
+
+}
 
 
+
+@media(min-width: 800px) {
+    .plm {
+        flex-direction: row;
+    }
+
+    .container {
+        align-items: flex-start;
+    }
+
+    .textes {
+        text-align: left;
+    }
+}
+
+
+@media(min-width: 1050px) {
+    .textes {
+        font-size: 1.3rem;
+    }
 }

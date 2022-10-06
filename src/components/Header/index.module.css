@@ -1,6 +1,8 @@
 nav {
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: 0;
     padding: .5em .5em;
     background: hsl(227, 10%, 10%, .9);
 }
@@ -68,6 +70,7 @@ nav {
 
 .logo {
     cursor: pointer;
+    max-width: 100px;
 }
 
 ul {
@@ -120,7 +123,7 @@ ul {
 }
 
 .navItemLow {
-    color: black;
+    color: white;
     font-size: 1.2rem;
     font-weight: 900;
     text-align: center;
@@ -132,11 +135,12 @@ a {
 
 .navItemLow:hover,
 .navItemLow:focus {
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(243, 243, 243, 0.2);
+    color: black;
 }
 
 .navLowOpen {
-    background-color: lightseagreen;
+    background-color: hsl(227, 10%, 10%, 0.9);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,20 +150,20 @@ a {
     padding-top: 3em;
     right: 0px;
     bottom: 0px;
-    width: 100%;
-    height: 150px;
+    width: 80%;
+    height: 400px;
     z-index: 1001;
     transition: width 250ms;
 }
 
 .navLowClosed {
-    background-color: lightseagreen;
+    background-color: hsl(227, 10%, 10%, 0.9);
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: fixed;
     padding-top: 3em;
-    height: 150px;
+    height: 400px;
     top: 0px;
     gap: .5em;
     right: 0px;
@@ -182,6 +186,10 @@ a {
     .navLowOpen,
     .hamburgerOpen {
         display: none;
+    }
+
+    .logo {
+        max-width: 150px;
     }
 }
 

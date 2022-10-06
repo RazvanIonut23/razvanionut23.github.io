@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     padding: 1em;
+    gap: 1em;
     color: white;
 }
 
@@ -11,14 +12,13 @@
 
 .aboutMe>p {
     font-weight: 700;
-    text-align: center;
-    max-width: 600px;
+    /* max-width: 600px; */
 }
 
 
 .resumeButton {
     color: dimgray;
-    border: 2px solid lightgray ;
+    border: 2px solid lightgray;
     color: lightgray;
     /* background-color: #ff8922; */
     text-align: center;
@@ -27,6 +27,7 @@
     max-width: 150px;
     font-size: 1.3rem;
     font-weight: 700;
+    margin: 1em 0em;
 }
 
 .resumeButton:hover,
@@ -55,37 +56,44 @@
 
 
 @media(min-width:600px) {
-    .aboutMe{
-        width: 80%;
+    .aboutMe {
+        max-width: 1200px;
         align-self: center;
+        margin: 0 auto;
     }
+
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .aboutMe>p{
+
+    .aboutMe>p {
         font-size: 1.2rem;
         text-align: left;
     }
-    .aboutMe>h2{
+
+    .aboutMe>h2 {
         font-size: 1.8rem;
         margin: 0;
     }
+
     .aboutMe>h3 {
         font-size: 1.6rem;
     }
 
+    .aboutMe {}
+
 }
 
 
-@media(min-width:900px){
-    .aboutMe {
-        width: 80%;
+@media(min-width:900px) {
+
+
+    .aboutMe>p {
+        font-size: 1.5rem;
+        text-align: left;
     }
-        .aboutMe>p {
-            font-size: 1.5rem;
-            max-width: 800px;
-            text-align: left;
-        }
+
+
 }
